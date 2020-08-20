@@ -1,0 +1,17 @@
+﻿
+.box-bacana {
+    background-color: rgba(253, 24, 255, 0.82);
+    color: whitesmoke;
+    font-size: 40px;
+    border: black solid 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 5px;
+    margin: 50px;
+    font-family: Arial;
+}
+
+div {
+    background-color: rgba(253, 24, 255, 0.82);
+    !important;
+    margin: 30px;
+}
