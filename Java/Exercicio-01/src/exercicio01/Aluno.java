@@ -10,9 +10,11 @@ package exercicio01;
  * @author Vinícius Alves de Campos
  */
 public class Aluno {
+    //ATRIBUTOS
     private String nome;
     private String ra;
     
+    //SETTERS
     public void setNome(String nome){
         this.nome = nome;
     }
@@ -21,6 +23,7 @@ public class Aluno {
         this.ra = ra;
     }
     
+    //GETTERS
     public String getNome(){
         return nome;
     }
@@ -28,4 +31,4 @@ public class Aluno {
     public String getRa(){
         return ra;
     }
-}
+} // CLASSE ALUNO

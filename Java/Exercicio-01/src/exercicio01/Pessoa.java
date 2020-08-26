@@ -11,11 +11,11 @@ package exercicio01;
  */
 public class Pessoa {
     
+   //ATRIBUTOS
    private String nome;
    private String sobrenome;
    
    //SETTERS
-   
    public void setNome(String nome){
        if(nome.isEmpty()){
            System.out.println("O nome não pode ser vazio!");
@@ -25,7 +25,7 @@ public class Pessoa {
        
    }
 
-    public void setSobrenome(String sobrenome) {
+   public void setSobrenome(String sobrenome) {
         if(nome.isEmpty()){
             System.out.println("O sobrenome não pode ser vazio!");
         }else{
@@ -52,7 +52,4 @@ public class Pessoa {
         return sobrenome + ", " + nome;
     }
     
-    
-    
-   
 } // CLASSE PESSOA
