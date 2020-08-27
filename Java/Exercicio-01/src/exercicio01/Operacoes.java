@@ -54,6 +54,15 @@ public class Operacoes {
         return "O valor da divisao de " + numero + " / " + numero2 + " é igual a: " + divisao;
     }
     
+        public String Quadrado(int numero){
+            int quadrado = numero*numero;
+            return "O valor de " + numero + " elevado ao quadrado é: " + quadrado; 
+        }
+        
+        public String Raiz(double numero){
+            double raiz = Math.sqrt(numero);
+            return "O valor da raiz de" + numero + " é: " + raiz;
+        }
    
     
     

@@ -41,6 +41,8 @@ public class ClassePrincipal {
         System.out.println(operacao.Subtracao(2, 8));
         System.out.println(operacao.Multiplicacao(2, 8));
         System.out.println(operacao.Divisao(2, 8));
+        System.out.println(operacao.Quadrado(12));
+        System.out.println(operacao.Raiz(25));
     }
     
 } // CLASSE PRINCIPAL
