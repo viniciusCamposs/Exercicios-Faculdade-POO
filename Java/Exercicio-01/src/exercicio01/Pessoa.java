@@ -15,6 +15,26 @@ public class Pessoa {
    private String nome;
    private String sobrenome;
    
+   
+   //CONSTRUTOR PARAMETRIZADO
+   public Pessoa(String nome, String sobrenome){
+       this.nome = nome;
+       this.sobrenome = sobrenome;
+   }
+   
+   //CONSTRUTOR PADRÃO
+   public Pessoa(){
+       nome = "";
+       sobrenome = "";
+   }
+   
+   //CONSTRUTOR CÓPIA
+   public Pessoa(Pessoa p){
+       // Só pode ser feito dentro de construtores.
+       this(p.nome,p.sobrenome);
+   }
+   
+   
    //SETTERS
    public void setNome(String nome){
        if(nome.isEmpty()){
