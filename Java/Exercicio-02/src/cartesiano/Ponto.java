@@ -80,5 +80,12 @@ public class Ponto {
         return distancia;
     }
     
+    public double distance(Ponto p){
+        return distance(p.x, p.y);
+    }
+    
+    public double distance(){
+        return distance(0,0);
+    }
     
 }
