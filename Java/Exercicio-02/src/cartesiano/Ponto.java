@@ -80,6 +80,7 @@ public class Ponto {
         return distancia;
     }
     
+    //Conceito de sobrecarga: dois metodos distance com assinaturas diferentes.
     public double distance(Ponto p){
         return distance(p.x, p.y);
     }

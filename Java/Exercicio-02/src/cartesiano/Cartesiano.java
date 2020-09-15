@@ -15,7 +15,7 @@ public class Cartesiano {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //CRIAÇÃO DO OBJETO PONTO
+        /*//CRIAÇÃO DO OBJETO PONTO
         Ponto ponto = new Ponto(1,2);
         
         //CHAMADA DO METODO TOSTRING()
@@ -32,7 +32,12 @@ public class Cartesiano {
         
         //CHAMADA DO METODO DISTANCE()
         System.out.println("Metodo distance(): " + ponto.distance(2, 2));
+        */
+        Circulo c1 = new Circulo(2,3,10);
         
+        c1.print();
+        c1.desloc(10,10);
+        c1.print();
     }
     
 }
