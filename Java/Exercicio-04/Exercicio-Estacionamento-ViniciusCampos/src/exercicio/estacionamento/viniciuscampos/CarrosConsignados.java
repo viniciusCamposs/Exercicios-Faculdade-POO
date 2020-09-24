@@ -55,13 +55,15 @@ public class CarrosConsignados extends Carros{
     //Metodos
     @Override
     public void ImprimeDados(){
-           System.out.println("Placa: " + getPlaca()+ 
-            "\nAno de Fabricação: " + getAnoFabricacao() + 
-            "\nModelo: " + getModelo() + 
-            "\nDispobilidade: " + getDisponibilidade() + 
-            "\nVendedor: " + proprietario);
+        super.ImprimeDados();
+        System.out.println("Proprietario: " + proprietario + 
+                           "Valor a receber: " + valorReceber);
     }
     
+    @Override
+    public boolean oferta(double valor){
+        return(valor <= valorReceber * 1.05);
+    }
     
 
     
