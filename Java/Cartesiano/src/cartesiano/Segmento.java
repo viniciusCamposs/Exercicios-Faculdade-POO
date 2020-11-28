@@ -53,9 +53,14 @@ public class Segmento
     }
     
     // Retorna o comprimento do segmento.
-    public double length()
+    public double length() throws SegmentoException
     {
-        return p1.distance(p2);
+        if(p1.distance(p2) == 0){
+            throw new SegmentoException(p1, p2);
+        }else{
+            return p1.distance(p2);
+        }
+       
     }
     
     // Retorna o ponto médio do segmento.

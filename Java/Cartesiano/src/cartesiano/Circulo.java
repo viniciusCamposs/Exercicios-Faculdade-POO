@@ -19,10 +19,14 @@ public class Circulo extends Ponto
         raio= 1;
     }
     
-    public Circulo(double x, double y, double raio)
+    public Circulo(double x, double y, double raio) throws CirculoException
     {
         super(x, y);
-        this.raio= raio;
+        if(raio <= 0){
+            throw new CirculoException(this.raio = raio);
+        }else{
+            this.raio = raio;
+        }
     }
 
     public void setRaio(double raio) 

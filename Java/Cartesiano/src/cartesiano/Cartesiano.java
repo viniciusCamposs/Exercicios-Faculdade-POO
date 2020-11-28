@@ -14,11 +14,11 @@ public class Cartesiano {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) 
+    public static void main(String[] args) throws CirculoException, SegmentoException, PoligonoException 
     {
         // Classe Poligono
         
-        Poligono pg= new Poligono();
+        /*Poligono pg= new Poligono();
         
         pg.addVertex(new Ponto(0,2));
         pg.addVertex(new Ponto(2,2));
@@ -28,10 +28,59 @@ public class Cartesiano {
         System.out.println("Perímetro: " + pg.perimeter());
         
         Poligono pg2= new Poligono();
+        pg2.addVertex(new Ponto(1,1));
         pg2.addVertex(new Ponto(2,2));
-        pg2.addVertex(new Ponto(4,2));
-        pg2.addVertex(new Ponto(4,0));
-        pg2.addVertex(new Ponto(2,0));
+        pg2.addVertex(new Ponto(3,3));
+        pg2.addVertex(new Ponto(4,4));
+        pg2.addVertex(new Ponto(5,5));
+        pg2.addVertex(new Ponto(6,6));
+        pg2.addVertex(new Ponto(7,7));
+        pg2.addVertex(new Ponto(8,8));
+        pg2.addVertex(new Ponto(9,9));
+        pg2.addVertex(new Ponto(10,10));
+        pg2.addVertex(new Ponto(11,11));
+        pg2.addVertex(new Ponto(12,12));
+        pg2.addVertex(new Ponto(13,13));
+        pg2.addVertex(new Ponto(14,14));
+        pg2.addVertex(new Ponto(15,15));
+        pg2.addVertex(new Ponto(16,16));
+        pg2.addVertex(new Ponto(17,17));
+        pg2.addVertex(new Ponto(18,18));
+        pg2.addVertex(new Ponto(19,19));
+        pg2.addVertex(new Ponto(20,20));
+        pg2.addVertex(new Ponto(21,21));
+        pg2.addVertex(new Ponto(22,22));
+        pg2.addVertex(new Ponto(23,23));
+        pg2.addVertex(new Ponto(24,24));
+        pg2.addVertex(new Ponto(25,25));
+        pg2.addVertex(new Ponto(26,26));
+        pg2.addVertex(new Ponto(27,27));
+        pg2.addVertex(new Ponto(28,28));
+        pg2.addVertex(new Ponto(29,39));
+        pg2.addVertex(new Ponto(30,30));
+        pg2.addVertex(new Ponto(31,31));
+        pg2.addVertex(new Ponto(32,32));
+        pg2.addVertex(new Ponto(33,33));
+        pg2.addVertex(new Ponto(34,34));
+        pg2.addVertex(new Ponto(35,35));
+        pg2.addVertex(new Ponto(36,36));
+        pg2.addVertex(new Ponto(37,37));
+        pg2.addVertex(new Ponto(38,38));
+        pg2.addVertex(new Ponto(39,39));
+        pg2.addVertex(new Ponto(40,40));
+        pg2.addVertex(new Ponto(41,41));
+        pg2.addVertex(new Ponto(42,42));
+        pg2.addVertex(new Ponto(43,43));
+        pg2.addVertex(new Ponto(44,44));
+        pg2.addVertex(new Ponto(45,45));
+        pg2.addVertex(new Ponto(46,46));
+        pg2.addVertex(new Ponto(47,47));
+        pg2.addVertex(new Ponto(48,48));
+        pg2.addVertex(new Ponto(49,49));
+        pg2.addVertex(new Ponto(50,50));
+        pg2.addVertex(new Ponto(51,51));
+
+        
         
         System.out.println("Distância: " + pg.distance(pg2));
         
@@ -43,45 +92,43 @@ public class Cartesiano {
         
         pg.delete(new Ponto(4, 8));
         pg.print();
-
+*/
         // Classe Circulo
         
-//        Circulo c1= new Circulo();
-//        Circulo c2= new Circulo(10, 20, 10);
-//        Circulo c3= new Circulo(c2);
-//        
-//        c1.print("c1");
-//        c2.print("c2");
-//        c3.print("c3");
-//        
-//        System.out.println("Perimetro de c1:" + c1.perimeter());
-//        System.out.println("Area de c1:" + c1.area());
-//        
-//        c3.desloc(20, 0);
-//        
-//        System.out.println("c2 é tangente a c3? " + c2.isTangent(c3));
+        /*Circulo c1= new Circulo(10, 20, 25);
+
+        
+        c1.print("c1");
+;
+        
+        System.out.println("Perimetro de c1:" + c1.perimeter());
+        System.out.println("Area de c1:" + c1.area());*/
+        
+
+        
+
         
         
         
         
         // Classe Segmento
         
-//        Segmento s1= new Segmento();
-//        Segmento s2= new Segmento(3, 4, 5, 6);
-//        Segmento s3= new Segmento(s2);
-//        
-//        s1.print("s1");
-//        s2.print("s2");
-//        s3.print("s3");
-//        
-//        s2.desloc(10, 10);
-//        s2.print("desloc s2");
-//        s3.print("s3");
-//        
-//        s3.scale(2);
-//        s3.print("s3");
-//        
-//        System.out.println("Comprimento de s3: " + s3.length());
+      /* // Segmento s1= new Segmento();
+        Segmento s2= new Segmento(2, 2, 2, 2);
+        //Segmento s3= new Segmento(s2);
+        
+        //s1.print("s1");
+        s2.print("s2");
+        //s3.print("s3");
+        
+        s2.desloc(10, 10);
+        s2.print("desloc s2");
+        //s3.print("s3");
+        
+        //s3.scale(2);
+       // s3.print("s3");
+        
+        System.out.println("Comprimento de s2: " + s2.length());
 //        
 //        Ponto pm= s2.midPoint();
 //        pm.print("Ponto médio de s2: ");
@@ -157,6 +204,8 @@ public class Cartesiano {
 //        p1.scale(0.5);
 //        p1.print("p1");
 //        s2.print("s2");
+*/
     }
     
 }
+

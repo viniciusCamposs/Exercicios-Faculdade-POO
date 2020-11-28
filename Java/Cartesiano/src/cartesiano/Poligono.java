@@ -29,9 +29,13 @@ public class Poligono
         return false;
     }
     
-    public boolean addVertex(Ponto pt)
+    public boolean addVertex(Ponto pt) throws PoligonoException
     {
-        if(count>=50) return false;
+        
+        if(count>=50){
+            throw new PoligonoException();
+        };
+        
         if(ptExist(pt)) return false;
         list[count]= pt;
         count++;
