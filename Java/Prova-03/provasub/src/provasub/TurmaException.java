@@ -3,16 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package autopecas;
+package provasub;
 
 /**
  *
- * @author Vinícius Alves de Campos
- * @RA: 0040481912053
+ * @author Matheus Augusto Satler RA: 0040481912052
  */
-public class IndiceException extends Exception{
+public class TurmaException extends Exception{
     @Override
     public String toString(){
-        return "ERRO! Índice inválido ou quantidade <= 0.";
+        return "ERRO!";
     }
 }
